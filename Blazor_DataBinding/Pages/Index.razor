@@ -1,0 +1,13 @@
+﻿@page "/"
+
+<PageTitle>Data Binding</PageTitle>
+
+<h1>@MyText</h1>
+
+<input @bind="MyText" @bind:event="oninput" style="width:50%;" />
+
+
+@code
+{
+    private string MyText { get; set; } = "Input your own text here";
+}
